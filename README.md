@@ -39,18 +39,19 @@ Each day = one small, runnable program + the intuition behind it.
 | 01  | What is an AI agent, really? | brain + tools + a loop → **think → do → see** |
 | 02  | The feedback loop | the agent **reacts** to what it sees — it writes its own plan |
 | 03  | Talking to a real LLM | an LLM is just **text in → text out**; the model talks, the code acts |
+| 04  | Tool use | the LLM **picks** a tool; our code runs it — *model proposes, code disposes* |
 
 *…updated daily.*
 
 ## 🗺 Roadmap
 
-- **Tool use** — let the LLM *pick* which tool to run
-- **Structured output** — reliable JSON instead of fuzzy text
-- **Memory** — short-term (context) vs. long-term
-- **Planning** — breaking a big goal into steps
-- **RAG** — giving the agent knowledge it wasn't trained on
-- **Guardrails & approval gates** — safe autonomous action
-- **MCP, multi-agent, evaluation, observability** — the real-world layer
+- [x] Tool use — let the LLM *pick* which tool to run
+- [ ] Structured output — reliable JSON instead of fuzzy text
+- [ ] Memory — short-term (context) vs. long-term
+- [ ] Planning — breaking a big goal into steps
+- [ ] RAG — giving the agent knowledge it wasn't trained on
+- [ ] Guardrails & approval gates — safe autonomous action
+- [ ] MCP, multi-agent, evaluation, observability — the real-world layer
 
 ## ▶️ Run it locally
 
@@ -60,7 +61,7 @@ ollama serve
 ollama pull llama3.2:3b
 
 # 2. run any day
-go run ./day03
+go run ./day04
 ```
 
 ---
