@@ -1,3 +1,4 @@
 # Go build output
 *.exe
 /bin/
+day06b/memory.json
