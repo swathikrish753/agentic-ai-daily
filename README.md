@@ -42,6 +42,7 @@ Each day = one small, runnable program + the intuition behind it.
 | 04  | Tool use | the LLM **picks** a tool; our code runs it — *model proposes, code disposes* |
 | 05  | Structured output | force the brain to reply in **clean JSON** — parse, don't guess |
 | 06  | Memory (short + long term) | model is **stateless**; short-term = resent history, long-term = persisted to disk |
+| 07  | Planning | decompose a big goal into ordered steps — **plan-and-execute** |
 
 *…updated daily.*
 
@@ -50,7 +51,7 @@ Each day = one small, runnable program + the intuition behind it.
 - [x] Tool use — let the LLM *pick* which tool to run
 - [x] Structured output — reliable JSON instead of fuzzy text
 - [x] Memory — short-term (context window) vs. long-term (persisted + re-injected)
-- [ ] Planning — breaking a big goal into steps
+- [x] Planning — breaking a big goal into steps
 - [ ] RAG — giving the agent knowledge it wasn't trained on
 - [ ] Guardrails & approval gates — safe autonomous action
 - [ ] MCP, multi-agent, evaluation, observability — the real-world layer
@@ -63,7 +64,7 @@ ollama serve
 ollama pull llama3.2:3b
 
 # 2. run any day
-go run ./day06b
+go run ./day07
 ```
 
 ---
